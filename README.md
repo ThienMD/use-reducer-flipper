@@ -2,7 +2,7 @@
 
 ![screenshot of the plugin](https://i.imgur.com/blqn8oT.png)
 
-UseReducer Logger for [Flipper](https://fbflipper.com/). It can log useReducer actions and show inside Flipper using [flipper-plugin-useReducer-debugger](https://github.com/jk-gan/flipper-plugin-useReducer-debugger).
+UseReducer Logger for [Flipper](https://fbflipper.com/). It can log useReducer actions and show inside Flipper using [flipper-plugin-redux-debugger ](https://github.com/jk-gan/flipper-plugin-useReducer-debugger).
 
 ### Support
 
