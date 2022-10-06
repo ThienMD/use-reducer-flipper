@@ -1,6 +1,6 @@
 {
   "name": "use-reducer-flipper",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "Use Reducer Hook API  for flipper",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -29,7 +29,9 @@
   "peerDependencies": {
     "react-native": ">=0.63.0",
     "react-native-flipper": ">=0.100.0",
-    "use-reducer": "^4"
+    "react": "^16.13.1",
+    "@types/react": "^16.13.1"
+
   },
   "devDependencies": {
     "@types/node": "^16.4.8",
@@ -40,11 +42,13 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.20.2",
     "prettier": "^2.0.4",
-    "typescript": "^4.3.5"
+    "typescript": "^4.3.5",
+    "react": "^16.13.1",
+    "@types/react": "^16.13.1"
+
   },
   "dependencies": {
     "dayjs": "^1.8.29",
-    "react": "^16.13.1",
-    "@types/react": "^18.0.18"
+    "cycle": "^1.0.3"
   }
 }

@@ -1,10 +1,13 @@
 import { addPlugin, Flipper } from 'react-native-flipper';
 import * as dayjs from 'dayjs';
 import { useCallback } from 'react';
-
+const cycle = require('cycle');
 let currentConnection: Flipper.FlipperConnection | null = null;
 
-const createStateForAction = (state: any) => state;
+const createStateForAction = (state: any) => {
+
+  return cycle.decycle(state);
+}
 
 // To initiate initial state tree
 const createInitialAction = (state: any) => {
@@ -34,7 +37,7 @@ const processState = (state: any, action: any, next: any) => {
       id: startTime,
       time: dayjs(startTime).format('HH:mm:ss.SSS'),
       took: `${now - startTime} ms`,
-      action,
+      action: createStateForAction(action),
       before: createStateForAction(state),
       after: createStateForAction(next),
     };
